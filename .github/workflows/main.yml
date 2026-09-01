@@ -2,11 +2,13 @@ name: My Cron
 
 on:
   schedule:
-    - cron: '5 * * * *'
+    - cron: '10 * * * *'
       timezone: 'Asia/Seoul'
 
 jobs:
-  test:
+  call-url:
     runs-on: ubuntu-latest
+
     steps:
-      - run: echo "크론 실행됨!"
+      - name: Call URL
+        run: curl -i "https://togijangi.jpg1.kr/claude_planner/public/noti.php"
