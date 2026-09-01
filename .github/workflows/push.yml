@@ -1,0 +1,12 @@
+name: URL 실행
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-url:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: URL 호출
+        run: curl "https://togijangi.jpg1.kr/claude_planner/public/noti.php"
