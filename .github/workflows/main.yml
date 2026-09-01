@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: Call URL
-        run: curl -i "https://togijangi.jpg1.kr/claude_planner/public/noti.php"
+        run: curl "https://togijangi.jpg1.kr/claude_planner/public/noti.php"
