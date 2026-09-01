@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - name: URL 호출
-        run: curl -s -o /dev/null -w "%{http_code}" https://togijangi.jpg1.kr/claude_planner/public/noti.php"
+        run: curl -s -o /dev/null -w "%{http_code}" https://togijangi.jpg1.kr/claude_planner/public/noti.php
